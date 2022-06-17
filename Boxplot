@@ -1,0 +1,7 @@
+# Box pot to show if there is an outlier on the data features
+i=1
+plt.figure(figsize=(15,25))
+for feature in data.columns:
+    plt.subplot(6,3,i)
+    sns.boxplot(y=data[feature])
+    i+=1
